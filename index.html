@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Você não resistiu — Luiz Barbosa</title>
+<meta name="description" content="Tem uma música secreta aqui.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#10273C; --bg2:#16324F; --cream:#F4EDE0; --cream-dim:#CDC2AD;
+    --accent:#CD7C63; --accent-deep:#B0453A; --line:rgba(244,237,224,.14);
+  }
+  *{box-sizing:border-box; margin:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    min-height:100vh; background:var(--bg);
+    background-image:radial-gradient(120% 90% at 50% -10%, #1c4066 0%, var(--bg) 60%);
+    color:var(--cream); font-family:"Inter",system-ui,sans-serif;
+    line-height:1.55; padding:38px 22px 56px;
+    display:flex; justify-content:center;
+  }
+  .wrap{width:100%; max-width:440px}
+
+  .stamp{
+    display:inline-block; font-family:"Fraunces",serif; font-style:italic;
+    font-size:13px; color:var(--accent); border:1px solid var(--accent);
+    border-radius:4px; padding:5px 11px; transform:rotate(-4deg);
+    position:relative; opacity:.85; margin-bottom:30px;
+  }
+  .stamp s{text-decoration-color:var(--accent-deep); text-decoration-thickness:2px}
+
+  .eyebrow{font-size:12.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--cream-dim); margin-bottom:14px}
+  h1{font-family:"Fraunces",serif; font-weight:600; font-size:clamp(40px,13vw,60px); line-height:.98; letter-spacing:-.02em; margin-bottom:16px}
+  .lede{font-size:16px; color:var(--cream-dim); max-width:34ch}
+
+  .card{
+    margin-top:34px; padding:26px 22px 24px; border:1px solid var(--line);
+    border-radius:16px; background:linear-gradient(180deg, rgba(244,237,224,.05), rgba(244,237,224,.02));
+  }
+  .label{font-family:"Fraunces",serif; font-style:italic; font-size:14px; color:var(--accent); margin-bottom:8px}
+  h2{font-family:"Fraunces",serif; font-weight:500; font-size:26px; line-height:1.12; margin-bottom:9px}
+  .card p{font-size:15px; color:var(--cream-dim)}
+  .fine{font-size:13.5px; margin-top:6px}
+
+  .btn{
+    display:block; text-align:center; text-decoration:none; margin-top:18px;
+    padding:15px 18px; border-radius:12px; font-weight:500; font-size:16px;
+    transition:transform .12s ease, opacity .12s ease;
+  }
+  .btn:active{transform:scale(.98)}
+  .btn.primary{background:var(--cream); color:var(--bg2)}
+  .btn.alt{background:var(--accent-deep); color:var(--cream)}
+
+  footer{margin-top:40px; text-align:center; color:var(--cream-dim); font-size:14px}
+  footer .sig{font-family:"Fraunces",serif; font-style:italic; font-size:17px; color:var(--cream); margin-bottom:4px}
+  footer a{color:var(--accent); text-decoration:none}
+
+  .reveal{opacity:0; transform:translateY(14px); animation:rise .7s ease forwards}
+  .r2{animation-delay:.12s}
+  .r3{animation-delay:.24s}
+  .r4{animation-delay:.36s}
+  @keyframes rise{to{opacity:1; transform:none}}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1; transform:none; animation:none}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="stamp reveal"><s>favor não escanear</s></span>
+
+    <p class="eyebrow reveal r2">então você escaneou</p>
+    <h1 class="reveal r2">Você não<br>resistiu.</h1>
+    <p class="lede reveal r2">Tudo bem. Eu também nunca resisto — isso tá até numa das minhas músicas.</p>
+
+    <div class="card reveal r3">
+      <p class="label">o segredo</p>
+      <h2>Tem uma música nova aqui.</h2>
+      <p>Ela se chama <em>Mar Morto</em> e estreia hoje. Salva ela agora pra não esquecer quando cair nas plataformas.</p>
+      <a class="btn primary" href="https://distrokid.com/hyperfollow/luizbarbosa/mar-morto?utm_campaign=website&utm_medium=Email+&utm_source=SendGrid" target="_blank" rel="noopener">Ouvir / pré-save →</a>
+    </div>
+
+    <div class="card reveal r4">
+      <p class="label">e já que você veio até aqui</p>
+      <h2>Dia 20/09 eu subo no palco.</h2>
+      <p><em>Prólogo: Raízes II</em> — uma contação de histórias em forma de música. Umas alegres, umas que doeram. Domingo, 16h30, no Jardim Ceci.</p>
+      <p class="fine">O desconto já tá aplicado no link. Considera um presente por ter desobedecido.</p>
+      <a class="btn alt" href="https://www.sympla.com.br/evento/luiz-barbosa-apresenta-prologo-raizes-ii/3494711?d=RUFINO10" target="_blank" rel="noopener">Garantir meu ingresso →</a>
+    </div>
+
+    <footer class="reveal r4">
+      <div class="sig">com carinho, Luiz</div>
+      <a href="https://instagram.com/luizf.barbosa" target="_blank" rel="noopener">@luizf.barbosa</a>
+    </footer>
+  </div>
+</body>
+</html>
